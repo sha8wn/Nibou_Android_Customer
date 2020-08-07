@@ -1,0 +1,214 @@
+<resources>
+    <string name="app_name">Nibou</string>
+    <string name="fcm_channel_id">Nibou</string>
+    <!--Login Language-->
+    <string name="choose_language">Choose your\nlanguage</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="turkish">Turkish</string>
+    <!--slide screen-->
+    <string name="skip">SKIP</string>
+    <string name="save">Save</string>
+    <string name="OK">OK</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="next">Next</string>
+    <string name="let_begin">Let\'s Begin</string>
+    <string name="welcome_to_nibou">Welcome to Nibou</string>
+    <string name="step_survey">Step 1 : Survey</string>
+    <string name="step_secure">Step 2 : Secure</string>
+    <string name="step_value">Step 3 : Value</string>
+    <string name="survey_description">Answer a few simple questions to specify your needs and preferences.</string>
+    <string name="secure_description">Your privacy is extremely important to us and all data exchanged over Nibou is encrypted.</string>
+    <string name="value_description">You will only be charged for the time you spend interacting with your therapist.</string>
+    <string name="welcome_description">Get access to qualified therapists round the clock.</string>
+    <!--user selection screen-->
+    <string name="new_user">I am a new user</string>
+    <string name="old_user">I am a returning user</string>
+    <string name="sign_up">Sign up</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_condition">Terms &amp; Conditions</string>
+    <string name="term_privacy_old">Your privacy if our number one priority. To understand we require this information. Please review our privacy policy and terms &amp; conditions.</string>
+    <string name="term_privacy">Your privacy if our number one priority. To understand we require this information. Please review our</string>
+    <string name="and">and</string>
+    <string name="privacy_policy_click">privacy policy</string>
+    <string name="terms_conditions_click">terms conditions.</string>
+    <string name="full_name">Full Name</string>
+    <string name="alias">Alias</string>
+    <string name="alias_message">Expert will not get access to your name and will refer to you using your alias.</string>
+    <string name="country">Country</string>
+    <string name="country_message">We take this information to match you with the best available experts.</string>
+    <string name="dob">DOB</string>
+    <string name="sign_up_message">By signing up, you are agreeing to Nibou\'s terms &amp; conditions.</string>
+    <string name="sign_up_success_message">You have successfully signed us with Nibou.\nYou need to activate your account in order to use the app. We have sent you instructions via email.</string>
+    <string name="success">Success</string>
+    <string name="continu">Continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="name_empty_alert">Please enter full name.</string>
+    <string name="alias_empty_alert">Please enter alias name.</string>
+    <string name="email_empty_alert">Please enter email address.</string>
+    <string name="email_invalid_alert">Invalid Email.</string>
+    <string name="password_empty_alert">Please enter password.</string>
+    <string name="country_empty_alert">Please enter country name.</string>
+    <string name="dob_empty_alert">Please select DOB.</string>
+    <!--reset password-->
+    <string name="forgot_password">Forgot password?</string>
+    <string name="enter_email">Enter your email below to receive your password reset instructions</string>
+    <string name="reset_pwd">Reset my password</string>
+    <string name="dialog_reset_pwd_message">If you have entered a valid email, you will receive an email with reset instructions.</string>
+    <!--survey screen-->
+    <string name="survey_title">What can we help\nyou with today?</string>
+    <string name="survey_sub_title">Select up to 3 options</string>
+    <string name="what_trouble_you">What\'s Troubling you?</string>
+    <string name="select_prefence">Select your\npreference</string>
+    <string name="any_prefernce">I do not have any preference</string>
+    <string name="female_prefernce">I prefer a female expert</string>
+    <string name="male_prefernce">I prefer a male expert</string>
+    <string name="survey_selection_alert">Please select atleast one option</string>
+    <!--progress screen-->
+    <string name="please_wait">Please wait</string>
+    <string name="please_wait_message">Please wait while we match you with the best available experts.</string>
+    <!--Api progress dialog messages-->
+    <!--expert screen-->
+    <string name="timing">Timing</string>
+    <string name="focus">Focus</string>
+    <string name="lanaguage">Language</string>
+    <string name="reviews">Reviews</string>
+    <string name="review">Review</string>
+    <string name="add_review">Submit Feedback</string>
+    <string name="thank_you">Thank you</string>
+    <string name="review_success">Your reviews help Nibou maintain its high standards.</string>
+    <string name="expert_list_title">Would you like to chat with an expert you have interacted with before?</string>
+    <string name="new_expert_messgae">I would like to speak to a new expert</string>
+    <string name="choose_previous_expert">Choose a previous expert</string>
+    <string name="no_pdf_alert">No Pdf available</string>
+    <!--timings-->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <!--Home screen-->
+    <string name="talk_different_issue">Talk about a\ndifferent issue</string>
+    <string name="home_subtitle">What would you like to do today?</string>
+    <string name="hello">Hello</string>
+    <!--chat screen-->
+    <string name="message">Message</string>
+    <string name="view_expert">View Expert</string>
+    <string name="switch_expert">Switch Expert</string>
+    <string name="message_copy_title">Would you like to send your previous chats to the new expert?</string>
+    <string name="share_chat">Yes, Please share my chat history</string>
+    <string name="not_share_chat">No, I\'d prefer to keep those private</string>
+    <string name="image">Image</string>
+    <!--Payment screen-->
+    <string name="payment">Payment info</string>
+    <string name="payment_message">In order to interact with a Nibou Expert, you will need to add a credit card to your account.\n\nYou will only be charged for the time you spend interacting with your therapist.\n\nWe take your security seriously. All of our transactions are protected using a secure payment gateway.</string>
+    <string name="redirect_payment">Redirected to\npayment gateway</string>
+    <string name="add_credit_card">Add Credit Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="cardholder_name">Card holder Name</string>
+    <string name="cvv">CVV</string>
+    <string name="expired">MM/YY</string>
+    <string name="choose_default_card">Choose default card</string>
+    <string name="add_card">Add Card</string>
+    <string name="select_card">Select Card</string>
+    <string name="visa">Visa</string>
+    <string name="delete">Delete</string>
+    <string name="expired_text">Expired</string>
+    <string name="set_default_card">Set As Default Card</string>
+    <string name="cardnumber_empty_alert">Please enter card number.</string>
+    <string name="cardholder_empty_alert">Please enter card holder name.</string>
+    <string name="expiry_empty_alert">Please enter card expiry.</string>
+    <string name="cvv_empty_alert">Please enter CVV number.</string>
+    <string name="delete_alert">Are you sure, Do you want to delete this card?</string>
+    <string name="doller">$</string>
+    <string name="aed">AED</string>
+    <string name="tl">TL</string>
+    <string name="minutes">Mins</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="room">Room:</string>
+    <string name="txn_id">Transaction Id:</string>
+    <string name="expert">Expert Name:</string>
+    <string name="earned">Amount:</string>
+    <string name="paid">Paid</string>
+    <!--Setting screen-->
+    <string name="edit_profile">Edit profile</string>
+    <string name="change_pwd">Change password</string>
+    <string name="language_menu">Choose language</string>
+    <string name="manage_cards">Manage cards</string>
+    <string name="transaction_hitstory">Transaction history</string>
+    <string name="pricing_terms">Pricing and terms</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="subject">Subject</string>
+    <string name="logout">Logout</string>
+    <string name="logout_message">Are you sure, you want to logout?</string>
+    <string name="feedback_star_alert">Please select the rating.</string>
+    <string name="feedback_empty_alert">Please enter feedback message</string>
+    <string name="subject_empty_alert">Please enter subject.</string>
+    <string name="feedback_success_alert">Feedback send successfully!</string>
+    <!--Change password screen-->
+    <string name="reset_password">Reset password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="repeat_new">Repeat New</string>
+    <string name="currentpwd_empty_alert">Please enter current password.</string>
+    <string name="newpwd_empty_alert">Please enter new password.</string>
+    <string name="repeatpwd_empty_alert">Please enter repeated password</string>
+    <string name="pwd_length_alert">Password must be 6 digits or greater</string>
+    <string name="pwd_mismatch_alert">Repeated password does not matched.</string>
+    <string name="pwd_change_success_alert">Password has been changed successfully.</string>
+    <string name="pwd_change_failed_alert">Current password is entered wrong.</string>
+    <string name="profile_change_success_alert">Your profile has been updated successfully</string>
+    <!--Expert offline screen-->
+    <string name="expert_offline">Expert Offline</string>
+    <string name="leave_message">Leave Message</string>
+    <!--general alert-->
+    <string name="card_error_alert">Invalid Card!</string>
+    <string name="card_expired_alert">Your card has been expired.</string>
+    <string name="timeout">Timeout, Please try again!</string>
+    <string name="server_faliure">Server no responding!</string>
+    <string name="wrong_with_backend">Something went wrong. Please try again!</string>
+    <string name="internet_error">Internet connection lost!</string>
+    <string name="error">ERROR</string>
+    <string name="alert">ALERT</string>
+    <string name="error_message">Incorrect username or password</string>
+    <string name="already_registered_message">Emaild Id is already registered with another account.</string>
+    <string name="forgot_password_error_alert">This account has not yet been created.</string>
+    <string name="press_back_message">Press back again to Exit.</string>
+    <string name="refresh_token_error_alert">Something went wrong. Please login again!</string>
+    <!--notification alert-->
+    <string name="notifications">Notifications</string>
+    <string name="group">Group</string>
+    <string name="end">end</string>
+    <string name="inactive_conversation">INACTIVE CONVERSATION</string>
+    <string name="inactive_conversation_message">It\'s been over %1$s minutes since your last response to %2$s would you still like to continue this conversation ?</string>
+    <string name="expert_offline_message1">is currently offline and will be available</string>
+    <string name="expert_offline_message2">You can switch to another expert or leave an offline message.</string>
+    <string name="to">to</string>
+    <string name="between">between</string>
+    <!--need to translate-->
+    <string name="credit_card_title_alert">Credit Card Error</string>
+    <string name="credit_card_message_alert">You do not have any valid credit cards in your account. Please add a valid card to continue chatting</string>
+    <string name="no_expert_alert">All experts are currently offline, please try again later.</string>
+    <string name="no_expert_alert_title">Experts Unavailable</string>
+    <string name="session_ended_alert">Your session has ended.</string>
+    <string name="type_here">Type Here...</string>
+    <string name="system_error">System Error</string>
+    <string name="system_error_message">We were unable to connect with the Nibou server. Please make sure you have a stable internet connection.</string>
+    <string name="try_again">Try Again</string>
+    <string name="account_activate_error_message">Please make sure you have a valid internet connection and have activated your account.</string>
+    <string name="end_conversation">End Conversation</string>
+    <string name="viewAll">View All</string>
+    <string name="agree">Agree</string>
+
+    <string name="profile">Profile</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="turkey">Turkey</string>
+</resources>
+

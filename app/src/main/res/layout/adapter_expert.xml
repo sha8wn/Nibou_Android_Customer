@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/box_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_editfield_drawable"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingTop="20dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/survey_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_r"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Hello"
+            android:textColor="@color/app_black_color_code"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/ubuntu_r"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="(09:00am - 05:00pm)"
+            android:textColor="@color/app_black_color_code"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/review_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_m"
+        android:gravity="center|left"
+        android:inputType="text"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="5dp"
+        android:text="Hello"
+        android:textColor="@color/app_black_color_code"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/review_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_m"
+        android:gravity="center|left"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="5dp"
+        android:text="Jan 21, 2019"
+        android:textColor="@color/app_black_color_code"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_name" />
+
+
+    <com.willy.ratingbar.ScaleRatingBar
+        android:id="@+id/review_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_date"
+        app:srb_clearRatingEnabled="false"
+        app:srb_clickable="false"
+        app:srb_drawableEmpty="@drawable/rating_unselected"
+        app:srb_drawableFilled="@drawable/rating_selected"
+        app:srb_isIndicator="false"
+        app:srb_numStars="5"
+        app:srb_rating="5"
+        app:srb_scrollable="false"
+        app:srb_starHeight="18dp"
+        app:srb_starWidth="18dp"
+        app:srb_stepSize="0.1"></com.willy.ratingbar.ScaleRatingBar>
+
+
+    <TextView
+        android:id="@+id/review_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/opensans_r"
+        android:gravity="center|left"
+        android:text="@string/value_description"
+        android:textColor="@color/app_black_color_code"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_star" />
+</android.support.constraint.ConstraintLayout>

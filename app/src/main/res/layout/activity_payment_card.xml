@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/pdf_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/title"
+                android:gravity="center|left"
+                android:layout_width="0dp"
+                android:text="@string/redirect_payment"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@color/screen_title_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <EditText
+                android:id="@+id/et_card_number"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shadow_bg_drawable"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/ubuntu_r"
+                android:padding="15dp"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:maxLength="19"
+                android:digits="01234 56789"
+                android:inputType="number"
+                android:theme="@style/MyEditTextTheme"
+                android:textColor="@color/app_black_color_code"
+                android:textColorHint="@color/hint_color"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                app:layout_constraintRight_toLeftOf="@+id/count"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                android:hint="@string/card_number"/>
+
+        <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/opensans_r"
+                android:background="@drawable/shadow_bg_drawable"
+                android:textColor="@color/screen_title_color"
+                app:layout_constraintLeft_toRightOf="@+id/et_card_number"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+
+        <ImageView
+                android:id="@+id/card_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@+id/count"
+                app:layout_constraintBottom_toBottomOf="@+id/count"
+                app:layout_constraintLeft_toLeftOf="@+id/count"
+                app:layout_constraintRight_toRightOf="@+id/count"
+                android:src="@drawable/visa_card_icon"/>
+
+
+        <EditText
+                android:id="@+id/et_card_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shadow_bg_drawable"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_r"
+                android:padding="15dp"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:inputType="textPersonName"
+                android:theme="@style/MyEditTextTheme"
+                android:textColor="@color/app_black_color_code"
+                android:textColorHint="@color/hint_color"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:imeOptions="actionNext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_card_number"
+                android:hint="@string/cardholder_name"/>
+
+        <EditText
+                android:id="@+id/et_card_expiry"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shadow_bg_drawable"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_r"
+                android:textDirection="locale"
+                android:textAlignment="center"
+                android:digits="01234 56789"
+                android:maxLength="5"
+                android:inputType="number"
+                android:theme="@style/MyEditTextTheme"
+                android:textColor="@color/app_black_color_code"
+                android:textColorHint="@color/hint_color"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_card_name"
+                android:hint="@string/expired"/>
+
+
+        <EditText
+                android:id="@+id/et_card_cvv"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shadow_bg_drawable"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_r"
+                android:textDirection="locale"
+                android:textAlignment="center"
+                android:maxLength="3"
+                android:inputType="numberPassword"
+                android:theme="@style/MyEditTextTheme"
+                android:textColor="@color/app_black_color_code"
+                android:textColorHint="@color/hint_color"
+                android:textSize="16sp"
+                android:imeOptions="actionDone"
+                app:layout_constraintLeft_toRightOf="@+id/et_card_expiry"
+                app:layout_constraintTop_toBottomOf="@+id/et_card_name"
+                android:hint="@string/cvv"/>
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btn_add_card"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="@string/add_credit_card"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/ubuntu_b"
+                android:padding="10dp"
+                android:textColor="@color/screen_title_color"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

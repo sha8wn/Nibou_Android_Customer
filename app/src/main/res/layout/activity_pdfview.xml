@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/webview_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/screentitle"
+                android:gravity="center|left"
+                android:layout_width="match_parent"
+                android:text="Dr. Jane Doe"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@color/dialog_title_color"
+                android:textSize="24sp"
+                android:layout_below="@+id/toolbar"/>
+
+        <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/screentitle"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:layout_height="match_parent"></WebView>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</layout>

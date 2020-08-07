@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/welcome_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/new_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="18dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/white_corner_drawable"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/old_user"
+                android:text="@string/new_user"
+                android:textAllCaps="true"/>
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/old_user"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="@string/old_user"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="18dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:background="@drawable/white_corner_drawable"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

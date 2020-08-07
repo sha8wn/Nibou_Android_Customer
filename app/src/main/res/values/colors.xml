@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#61b3c9</color>
+    <color name="colorPrimaryDark">#61b3c9</color>
+    <color name="colorAccent">#d6dae0</color>
+
+    <!--dialog color-->
+    <color name="app_black_color_code">#314763</color>
+    <color name="app_white_color_code">#FFFFFF</color>
+    <color name="app_black_shadow_edit_color_code">#10000000</color>
+    <color name="chat_line_color">#d6dae0</color>
+    <color name="chat_messgae_color">#aeaeae</color>
+    <color name="webview_bg_color">#D1D1D1</color>
+    <color name="retry_circle_color">#60000000</color>
+
+    <color name="paid_color">#739588</color>
+
+
+    <color name="dialog_message_color">#314763</color>
+    <color name="dialog_title_color">#314763</color>
+    <color name="star_color">#2D4A61</color>
+    <color name="hint_color">#88b0d0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dialog_edittext_color">#f2f2f2</color>
+    <color name="app_theme_color">#61b3c9</color>
+    <color name="header_grey_text_color">#c6e7e7</color>
+    <color name="pdf_bg">#c6e8e8</color>
+    <color name="menu_selected">#6bc2c2</color>
+    <color name="menu_unselected">#b5e0e0</color>
+    <color name="screen_title_color">#2D475e</color>
+    <color name="screen_text_color">#3E5C67</color>
+
+    <color name="dashboard_back">#c6e8e8</color>
+
+    <color name="disable_grey">#aeaeae</color>
+
+</resources>

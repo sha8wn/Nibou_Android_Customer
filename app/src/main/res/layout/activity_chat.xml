@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/parent"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/my_toolbar"/>
+
+            <FrameLayout
+                    android:id="@+id/frameLayout_container"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_height="match_parent"></FrameLayout>
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

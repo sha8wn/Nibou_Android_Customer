@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="app_name">Nibou</string>
+    <string name="fcm_channel_id">Nibou</string>
+    <!--Login Language-->
+    <string name="choose_language">Dilinizi seçin</string>
+    <string name="english">İngilizce </string>
+    <string name="arabic">Arapça </string>
+    <string name="turkish">Türkçe</string>
+    <!--slide screen-->
+    <string name="skip">ATLA</string>
+    <string name="save">Kaydet </string>
+    <string name="OK">TAMAM</string>
+    <string name="CANCEL">İPTAL </string>
+    <string name="next">Sonraki</string>
+    <string name="let_begin">HAYDİ BAŞLAYALIM</string>
+    <string name="welcome_to_nibou">Nibou’ya Hoşgeldiniz </string>
+    <string name="step_survey">Adım 1: Anket </string>
+    <string name="step_secure">Adım 2: Güvenli </string>
+    <string name="step_value">Adım 3: Ücret </string>
+    <string name="survey_description">İhtiyaçlarınızı ve tercihlerinizi belirlemek için birkaç basit soruyu yanıtlayın.</string>
+    <string name="secure_description">Gizliliğiniz bizim için son derece önemlidir ve Nibou üzerinden paylaşılan tüm veriler şifrelenmiştir. </string>
+    <string name="value_description">Yalnızca danışmanlarımızın sizinle etkileşim kurduğu süre için ücret ödersiniz.</string>
+    <string name="welcome_description">24 saat nitelikli danışmanlara erişin </string>
+    <!--user selection screen-->
+    <string name="new_user">Yeni kullanıcıyım</string>
+    <string name="old_user">Geri dönen kullanıcıyım</string>
+    <!--sign up screen-->
+    <string name="sign_up">Kaydol </string>
+    <string name="privacy_policy">Gizlilik Politikası </string>
+    <string name="term_condition">Şartlar ve koşullar </string>
+    <string name="term_privacy_old">Gizliliğiniz birincil önceliğimizdir. Bu bilgileri istememizin nedenine gizlilik politikamız ve Üyelik Sözleşmesi bölümünden ulaşabilirsiniz.</string>
+    <string name="term_privacy">Gizliliğiniz birincil önceliğimizdir. Bu bilgileri istememizin nedenine</string>
+    <string name="and">ve</string>
+    <string name="privacy_policy_click">gizlilik politikamız</string>
+    <string name="terms_conditions_click">Üyelik Sözleşmesi bölümünden ulaşabilirsiniz.</string>
+    <string name="full_name">Ad Soyad  </string>
+    <string name="alias">Kullanıcı Adı </string>
+    <string name="alias_message">Uzmanlarımız adınızı soyadınızı göremez. Sadece kullanıcı adınızı görebilir.</string>
+    <string name="country">Ülke</string>
+    <string name="country_message">Bu bilgileri sizi en uygun danışman ile eşleştirmek için alıyoruz. </string>
+    <string name="dob">DT</string>
+    <string name="sign_up_message">Kaydolarak Nibou\'nun şart ve koşullarını kabul etmiş oluyorsunuz. </string>
+    <string name="sign_up_success_message">Nibou’ya başarı ile kaydoldunuz. Daha mutlu bir hayata bir adım daha yaklaştınız.  </string>
+    <string name="success">Başarı</string>
+    <string name="continu">Devam</string>
+    <string name="email">E-Posta</string>
+    <string name="password">Şifre </string>
+    <string name="login">Giriş </string>
+    <string name="name_empty_alert">Lütfen ad soyad giriniz. </string>
+    <string name="alias_empty_alert">Lütfen kullanıcı adınızı giriniz. </string>
+    <string name="email_empty_alert">Lütfen E-Posta adresinizi giriniz </string>
+    <string name="email_invalid_alert">Geçersiz E-Posta </string>
+    <string name="password_empty_alert">Lütfen şifrenizi giriniz. </string>
+    <string name="country_empty_alert">Lütfen ülke adını giriniz. </string>
+    <string name="dob_empty_alert">Lütfen doğum tarihinizi seçin  </string>
+    <!--reset password-->
+    <string name="forgot_password">Parolanızı mı unuttunuz?</string>
+    <string name="enter_email">Şifre sıfırlama yönergeleri için e-posta adresinizi girin </string>
+    <string name="reset_pwd">Şifremi sıfırla </string>
+    <string name="dialog_reset_pwd_message">Geçerli bir E-Posta girdiyseniz, şifre sıfırlama yönergeleri E-Postanıza gönderilecektir. </string>
+    <!--survey screen-->
+    <string name="survey_title">Bugün size nasıl yardımcı olabiliriz? </string>
+    <string name="survey_sub_title">En fazla 3 seçenek işaretleyiniz. </string>
+    <string name="what_trouble_you">Sizi ne rahatsız ediyor?</string>
+    <string name="select_prefence">Tercihlerinizi seçin </string>
+    <string name="any_prefernce">Tercihim yok</string>
+    <string name="female_prefernce">Bir kadın danışman ile görüşmek istiyorum</string>
+    <string name="male_prefernce">Bir erkek danışman ile görüşmek istiyorum</string>
+    <string name="survey_selection_alert">En az birini seçin.</string>
+    <!--progress screen-->
+    <string name="please_wait">Lütfen bekleyin. </string>
+    <string name="please_wait_message">Sizi en uygun uzmanla eşleştiriyoruz, lütfen bekleyin. </string>
+    <!--Api progress dialog messages-->
+    <!--expert screen-->
+    <string name="timing">Uygun Saatler</string>
+    <string name="focus">Uzmanlık Alanları</string>
+    <string name="lanaguage">Konuştuğu Diller</string>
+    <string name="reviews">Yorumlar </string>
+    <string name="review">Yorum </string>
+    <string name="add_review">Yorum ekle </string>
+    <string name="thank_you">Teşekkürler </string>
+    <string name="review_success">Yorumlarınız Nibou’nun yüksek standartlarını korumasına yardımcı olacaktır. </string>
+    <string name="expert_list_title">Önceden yetkilerdiğim bir uzmanla görüşmek istiyorum.  </string>
+    <string name="new_expert_messgae">Yeni bir danışmanla görüşmek istiyorum. </string>
+    <string name="choose_previous_expert">Önceki uzmanı seçin</string>
+    <string name="no_pdf_alert">dosyası mevcut değil. </string>
+    <!--timings-->
+    <string name="monday">Pazartesi </string>
+    <string name="tuesday">Salı</string>
+    <string name="wednesday">Çarşamba </string>
+    <string name="thursday">Perşembe </string>
+    <string name="friday">Cuma </string>
+    <string name="saturday">Cumartesi </string>
+    <string name="sunday">Pazar </string>
+    <!--Home screen-->
+    <string name="talk_different_issue">Başka bir konuda danışın. </string>
+    <string name="home_subtitle">Bugün ne yapmak istiyorsunuz? </string>
+    <string name="hello">Merhaba </string>
+    <!--chat screen-->
+    <string name="message">Mesaj</string>
+    <string name="view_expert">Uzmanı görüntüleyin</string>
+    <string name="switch_expert">Uzmanı değiştirin</string>
+    <string name="message_copy_title">Nibou Üyesi olarak uygulama içerisinde yer alan özelliklerden faydalanman ve yeni terapistin ile görüşmenin verimli geçmesi amacıyla konuşma geçmişinin yeni terapistin ile paylaşılmasını ister misin?</string>
+    <string name="share_chat">Evet, konuşma geçmişimin paylaşılmasını kabul ediyorum.</string>
+    <string name="not_share_chat">Hayır, konuşma geçmişimin paylaşılmasını kabul etmiyorum.</string>
+    <string name="image">Görüntü</string>
+    <!--Payment screen-->
+    <string name="payment">Ödeme bilgisi</string>
+    <string name="payment_message">BİR NİBOU UZMANI İLE GÖRÜŞEBİLMEK İÇİN HESABINIZA BİR KREDİ KARTI EKLEMELİSİNİZ.\n\nSİZİN SORUNUZU İLETTİĞİNİZ, DANIŞMANIN DURUMU ANALİZ ETTİĞİ VE SİZE CEVAP VERDİĞİ SÜRE İÇİN ÜCRETLENDİRİLECEKSİNİZ.\n\nGÜVENLİĞİ ÇOK CİDDİYE ALIYORUZ. TÜM İŞLEMLERİNİZ GÜVENLİ ÖDEME  AĞI İLE KORUNUYOR</string>
+    <string name="redirect_payment">Ödeme sağlayiciya yönlendirildi</string>
+    <string name="add_credit_card">KREDİ KARTI EKLEYİN</string>
+    <string name="card_number">Kart numarası </string>
+    <string name="cardholder_name">Kart Sahibinin Adı</string>
+    <string name="cvv">CVV</string>
+    <string name="expired">AA/YY</string>
+    <string name="choose_default_card">Varsayılan kartı seçin</string>
+    <string name="add_card">Kart Ekleyin</string>
+    <string name="select_card">Kart seç </string>
+    <string name="visa">Visa</string>
+    <string name="delete">Sil </string>
+    <string name="expired_text">Silindi </string>
+    <string name="set_default_card">Varsayılan Kart Olarak Ayarla </string>
+    <string name="cardnumber_empty_alert">Lütfen kart numaranızı girin </string>
+    <string name="cardholder_empty_alert">Lütfen kart sahibinin adını girin .</string>
+    <string name="expiry_empty_alert">Lütfen kartın son kullanma tarihini girin  </string>
+    <string name="cvv_empty_alert">Lütfen CVV numarasını giriniz. </string>
+    <string name="delete_alert">Bu kartı silmek istediğinizden emin misiniz? </string>
+    <string name="doller">$</string>
+    <string name="aed">AED</string>
+    <string name="tl">₺</string>
+    <string name="minutes">Dak</string>
+    <string name="date">Tarih: </string>
+    <string name="time">Zaman:</string>
+    <string name="room">Oda:</string>
+    <string name="txn_id">İşlem kimliği: </string>
+    <string name="expert">Danışman Adı: </string>
+    <string name="earned">Meblağ: </string>
+    <string name="paid">Ödendi </string>
+    <!--Setting screen-->
+    <string name="edit_profile">Profili düzenleyin</string>
+    <string name="change_pwd">Şifrenizi değistirin</string>
+    <string name="reset_password">Şifrenizi yenileyin</string>
+    <string name="language_menu">Dil seçin</string>
+    <string name="manage_cards">Kredi kartlarinizi yönetin</string>
+    <string name="transaction_hitstory">İşlem geçmişi</string>
+    <string name="pricing_terms">Ücretler ve koşullar</string>
+    <string name="settings">Ayarlar</string>
+    <string name="feedback">Geri bildirim</string>
+    <string name="subject">Lütfen konuyu giriniz</string>
+    <string name="logout">Çıkış Yap </string>
+    <string name="logout_message">Çıkış yapmak istediğinize emin misiniz?</string>
+    <string name="feedback_star_alert">Lütfen değerlendirmenizi seçin</string>
+    <string name="feedback_empty_alert">Lütfen geri bildirim iletinizi girin</string>
+    <string name="subject_empty_alert">Lütfen konu girin</string>
+    <string name="feedback_success_alert">Geri bildiriminiz başarıyla gönderilmiştir</string>
+    <!--Change password screen-->
+    <string name="current_password">Mevcut şifre </string>
+    <string name="new_password">Yeni şifre </string>
+    <string name="repeat_new">Yeni şifreyi tekrar girin </string>
+    <string name="currentpwd_empty_alert">Mevcut şifrenizi girin </string>
+    <string name="newpwd_empty_alert">Lütfen yeni şifrenizi girin. </string>
+    <string name="repeatpwd_empty_alert">Lütfen yeni şifrenizi tekrar girin. </string>
+    <string name="pwd_length_alert">Şifreniz en az 6 rakamdan oluşmalıdır. </string>
+    <string name="pwd_mismatch_alert">Girdiğiniz şifre eşleşmedi </string>
+    <string name="pwd_change_success_alert">Şifre başarıyla değiştirildi </string>
+    <string name="pwd_change_failed_alert">Geçerli şifre yanlış girildi.</string>
+    <string name="profile_change_success_alert">Profil başarıyla güncellendi  </string>
+    <!--Expert offline screen-->
+    <string name="expert_offline">Danışman çevrimdışı </string>
+    <string name="leave_message">Mesaj bırakın </string>
+    <!--general alert-->
+    <string name="card_error_alert">Geçersiz kredi kartı </string>
+    <string name="card_expired_alert">Kartınızın son kullanma tarihi geçmiş </string>
+    <string name="timeout">Zamanaşımı oluştu. Lütfen tekrar deneyin </string>
+    <string name="server_faliure">Sunucu cevap vermiyor</string>
+    <string name="wrong_with_backend">Bir şeyler yanlış gitti. Lütfen tekrar deneyin</string>
+    <string name="internet_error">İnternet bağlantısı koptu</string>
+    <string name="error">HATA</string>
+    <string name="alert">UYARI</string>
+    <string name="error_message">Yanlış kullanıcı adı ya da parola </string>
+    <string name="already_registered_message">E-posta başka bir hesaba kayıtlı. </string>
+    <string name="forgot_password_error_alert">Böyle bir hesap yok. </string>
+    <string name="press_back_message">Çıkmak için lütfen geri tuşuna tekrar basınız</string>
+    <string name="refresh_token_error_alert">Bir şeyler yanlış gitti. Lütfen tekrar giriş yapın</string>
+    <!--notification alert-->
+    <string name="notifications">Bildirimler </string>
+    <string name="group">Grup</string>
+    <string name="end">Son</string>
+    <string name="inactive_conversation">ETKİN OLMAYAN KONUŞMA</string>
+    <string name="inactive_conversation_message">%1$s\'a son cevabınızdan bu yana %2$s dakika geçti, hala bu sohbete devam etmek istiyor musunuz?</string>
+    <string name="expert_offline_message1">şu anda çevrimdışı ve… uygun olacak. </string>
+    <string name="expert_offline_message2">Başka bir danışman seçebilir ya da çevrimdışı mesaj bırakabilirsiniz. </string>
+    <string name="to">to</string>
+    <string name="between">arasında </string>
+    <string name="credit_card_title_alert">Kredi Kartı Hatası</string>
+    <string name="credit_card_message_alert">Hesabınızda geçerli bir kredi kartınız yok. Lütfen sohbete devam etmek için geçerli bir kart ekleyin.</string>
+    <string name="no_expert_alert">Danışman çevrimdışı. Lütfen tekrar deneyin.</string>
+    <string name="no_expert_alert_title">Danışmanlar kullanılamıyor</string>
+    <string name="session_ended_alert">Your session has ended.</string>
+    <string name="type_here">Lütfen mesajınızı girin</string>
+    <string name="system_error">Sistem hatası</string>
+    <string name="system_error_message">İnternet bağlantısı hatası</string>
+    <string name="try_again">Lütfen tekrar deneyin</string>
+    <string name="viewAll">Yorumları Görüntüle</string>
+    <string name="account_activate_error_message">Lütfen geçerli bir internet bağlantınızın olduğundan ve hesabınızı etkinleştirdiğinizden emin olun.</string>
+    <string name="end_conversation">Görüşmeyi bitirin</string>
+    <string name="agree">Kabul Ediyorum</string>
+
+    <string name="profile">Profil</string>
+    <string name="no">İptal</string>
+    <string name="yes">Devam</string>
+    <string name="turkey">Türkiye</string>
+</resources>

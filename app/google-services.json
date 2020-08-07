@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "947722404069",
+    "firebase_url": "https://nibou-1fa4e.firebaseio.com",
+    "project_id": "nibou-1fa4e",
+    "storage_bucket": "nibou-1fa4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947722404069:android:b6e0106a1ec456be",
+        "android_client_info": {
+          "package_name": "com.nibouapp.nibou_customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947722404069-mvba43sts4os0iqdk75jt8qvhjmkhd60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nibouapp.nibou_customer",
+            "certificate_hash": "64be9297a9dc4c43144a3c68fde61cb4a581b00d"
+          }
+        },
+        {
+          "client_id": "947722404069-i1jb014trmmda2v7ag2durisdb0tondb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nibouapp.nibou_customer",
+            "certificate_hash": "70b580c8d092201c240b36de92bd3cc76651c94b"
+          }
+        },
+        {
+          "client_id": "947722404069-dufc2vup26fbdg3el6hlpojfetib0pbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO9RF_jwEYDqiyhqOIlZodGrR7UFaSM7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947722404069-dufc2vup26fbdg3el6hlpojfetib0pbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947722404069:android:d9d045df1014e4bf",
+        "android_client_info": {
+          "package_name": "com.nibouapp.nibou_expert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947722404069-ob59ako5htqpo0vs5gg0e5tvnmqf3gno.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nibouapp.nibou_expert",
+            "certificate_hash": "64be9297a9dc4c43144a3c68fde61cb4a581b00d"
+          }
+        },
+        {
+          "client_id": "947722404069-uu84bqrnlpvmf9vrs23clggl3ta86h7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nibouapp.nibou_expert",
+            "certificate_hash": "70b580c8d092201c240b36de92bd3cc76651c94b"
+          }
+        },
+        {
+          "client_id": "947722404069-dufc2vup26fbdg3el6hlpojfetib0pbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO9RF_jwEYDqiyhqOIlZodGrR7UFaSM7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947722404069-dufc2vup26fbdg3el6hlpojfetib0pbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

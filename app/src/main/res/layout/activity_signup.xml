@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+            <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/my_toolbar" />
+
+            <TextView
+                    android:id="@+id/signup_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:gravity="center|left"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/opensans_r"
+                    android:paddingBottom="15dp"
+                    android:text="@string/term_privacy_old"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/header_grey_text_color"
+                    android:textColorHighlight="#f00"
+                    android:textColorLink="#0f0"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_title" />
+
+            <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:hint="@string/full_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="17dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/privacy" />
+
+            <EditText
+                    android:id="@+id/et_alias"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:hint="@string/alias"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="17dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+            <ImageView
+                    android:id="@+id/alias_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    android:src="@drawable/info_icon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_alias" />
+
+
+            <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="17dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_alias" />
+
+
+            <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="17dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <ImageView
+                    android:id="@+id/eye_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    android:src="@drawable/eye_icon"
+                    android:tag="0"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_password" />
+
+            <EditText
+                    android:id="@+id/et_country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:hint="@string/country"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="35dp"
+                    android:text="@string/turkey"
+                    android:paddingBottom="17dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+            <ImageView
+                    android:id="@+id/country_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    android:src="@drawable/info_icon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_country" />
+
+            <EditText
+                    android:id="@+id/et_dob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/ubuntu_r"
+                    android:hint="@string/dob"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="35dp"
+                    android:paddingBottom="17dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_country" />
+
+            <TextView
+                    android:id="@+id/btn_signup"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sign_up"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_dob" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</layout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar" />
+
+        <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/welcome_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/ubuntu_r"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/hint_color"
+                android:textDirection="locale"
+                android:textSize="14sp"
+                android:theme="@style/MyEditTextTheme"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/ubuntu_r"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="35dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/hint_color"
+                android:textDirection="locale"
+                android:textSize="14sp"
+                android:theme="@style/MyEditTextTheme"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+        <ImageView
+                android:id="@+id/eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/eye_icon"
+                android:tag="0"
+                app:layout_constraintBottom_toBottomOf="@+id/et_password"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_password" />
+
+        <TextView
+                android:id="@+id/forgot_password"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/ubuntu_m"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/forgot_password"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <TextView
+                android:id="@+id/login"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

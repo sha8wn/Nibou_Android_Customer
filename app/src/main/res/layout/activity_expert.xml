@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar" />
+
+        <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_continue"
+                android:layout_below="@+id/toolbar"
+                android:paddingBottom="10dp">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+
+                <TextView
+                        android:id="@+id/expert_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center"
+                        android:text="Dr. Jane Doe"
+                        android:textColor="@color/app_black_color_code"
+                        android:textSize="22sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                <ImageView
+                        android:id="@+id/pdf_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/education_icon"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/expert_name"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/expert_name" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/expert_dp"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/default_placeholder"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/expert_name" />
+
+                <TextView
+                        android:id="@+id/count"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/online_circle_drable"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/expert_dp"
+                        app:layout_constraintRight_toRightOf="@+id/expert_dp" />
+
+
+                <TextView
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/ubuntu_m"
+                        android:gravity="center"
+                        android:text="Dubai, UAE-GMT + 4"
+                        android:textColor="@color/app_black_color_code"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/expert_dp" />
+
+                <TextView
+                        android:id="@+id/timing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/ubuntu_r"
+                        android:gravity="center"
+                        android:text="Monday - Thursday (9am to 5pm)"
+                        android:textColor="@color/app_black_color_code"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                <TextView
+                        android:id="@+id/expert_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/ubuntu_r"
+                        android:gravity="center"
+                        android:text="@string/value_description"
+                        android:textColor="@color/app_black_color_code"
+                        android:textSize="13sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/timing" />
+
+                <TextView
+                        android:id="@+id/timing_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center|left"
+                        android:text="@string/timing"
+                        android:textAllCaps="false"
+                        android:textColor="@color/app_black_color_code"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/expert_details" />
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/timing_recyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/timing_label"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                        android:id="@+id/focus_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center|left"
+                        android:text="@string/focus"
+                        android:textAllCaps="false"
+                        android:textColor="@color/app_black_color_code"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/timing_recyclerview" />
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/focus_recyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/focus_label"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                        android:id="@+id/language_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center|left"
+                        android:text="@string/lanaguage"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dialog_title_color"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/focus_recyclerview" />
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/language_recyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/language_label"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                        android:id="@+id/review_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/reviews"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dialog_title_color"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/language_recyclerview" />
+
+                <TextView
+                        android:id="@+id/view_all"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/ubuntu_b"
+                        android:gravity="right"
+                        android:text="@string/viewAll"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dialog_title_color"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toRightOf="@+id/review_label"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/language_recyclerview" />
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/review_recyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/review_label"></android.support.v7.widget.RecyclerView>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+                android:id="@+id/btn_continue"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/ubuntu_b"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/continu"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/app_black_color_code"
+                android:textSize="16sp" />
+
+    </RelativeLayout>
+</layout>

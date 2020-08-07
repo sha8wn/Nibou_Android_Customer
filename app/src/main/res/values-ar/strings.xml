@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">Nibou</string>
+    <string name="fcm_channel_id">Nibou</string>
+    <!--Login Language-->
+    <string name="choose_language">اختار اللغة</string>
+    <string name="english">انكليزي</string>
+    <string name="arabic">عربي</string>
+    <string name="turkish">تركي</string>
+    <!--slide screen-->
+    <string name="skip">تخطى</string>
+    <string name="save">حفظ</string>
+    <string name="OK">حسنا</string>
+    <string name="CANCEL">الغاء</string>
+    <string name="next">التالي</string>
+    <string name="let_begin">لنبدأ</string>
+    <string name="welcome_to_nibou">اهلا بك في نيبو</string>
+    <string name="step_survey">الخطوة الاولى : دراسة استقصائية</string>
+    <string name="step_secure">الخطوة الثانية : تأمين</string>
+    <string name="step_value">الخطوة الثالثة : الأهمية</string>
+    <string name="survey_description">اجيبوا على بعض الاسئلة البسيطة لتحديد احتياجاتكم و تفضيلاتكم</string>
+    <string name="secure_description">خصوصياتكم مهمة جدا" لنا وكل البيانات المتبادلة مع "نيبو" مشفرة
+    </string>
+    <string name="value_description">يتم محاسبتكم فقط على الوقت الذي يستغرقه المعالجون لدينا للتفاعل معكم</string>
+    <string name="welcome_description">امكانية الحصول على معالجين مؤهلين على مدار الساعة</string>
+    <!--user selection screen-->
+    <string name="new_user">انا مستخدم جديد</string>
+    <string name="old_user">انا مستخدم عائد</string>
+    <string name="sign_up">للتسجيل</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="privacy_policy_click">سياسة الخصوصية،</string>
+    <string name="terms_conditions_click">الاحكام والشروط الخاصة بن</string>
+    <string name="term_condition">الاحكام والشروط</string>
+    <string name="and">و</string>
+    <string name="term_privacy">اولويتنا الاولى هي خصوصياتكم .من اجل تفهم طلبنا لهذه المعلومات ، الرجاء مراجعة </string>
+    <string name="term_privacy_old">اولويتنا الاولى هي خصوصياتكم .من اجل تفهم طلبنا لهذه المعلومات ، الرجاء مراجعة  سياسة الخصوصية، و الاحكام والشروط الخاصة بن</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="alias">الاسم المستعار</string>
+    <string name="alias_message">لن يحصل  الخبير على اسمكم وسيتواصل معكم على الاسم المستعار</string>
+    <string name="country">الدولة</string>
+    <string name="country_message">نرغب الحصول على هذه المعلومات من اجل تواصلكم مع افضل الخبراء المتاحين</string>
+    <string name="dob">تاريخ الميلاد</string>
+    <string name="sign_up_message">اولويتنا الاولى هي خصوصياتكم .من اجل تفهم طلبنابالتسجيل ، انتم توافقون على الشروط والاحكام الخاصة بـ نيب</string>
+    <string name="sign_up_success_message">تم تسجيلكم بنجاح مع "نيبو". انتم على بعد خطوة واحدة من حياة اكثر سعادة</string>
+    <string name="success">نجاح</string>
+    <string name="continu">استمر</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="name_empty_alert">يرجى ادخال الاسم بالكامل</string>
+    <string name="alias_empty_alert"> يرجى ادخال الاسم المستعار</string>
+    <string name="email_empty_alert">يرجى ادخال عنوان البريد الإلكتروني</string>
+    <string name="email_invalid_alert">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="password_empty_alert">يرجى إدخال كلمة مرور صالحة مع ستة أحرف على الأقل</string>
+    <string name="country_empty_alert">يرجى ادخال اسم الدولة</string>
+    <string name="dob_empty_alert">يرجى تحديد تاريخ الميلاد</string>
+    <!--reset password-->
+    <string name="forgot_password">هل نسيتم كلمة المرور؟</string>
+    <string name="enter_email">ادخلوا بريدكم الالكتروني ادناه لتلقي تعليمات اعادة تعيين كلمة المرور الخاصة بكم</string>
+    <string name="reset_pwd">اعادة تعيين كلمة المرور الخاصة بي</string>
+    <string name="dialog_reset_pwd_message">اذا ادخلتم عنوان بريدا" الكترونيا" صالحا"، فستتلقون رسالة بريد الكتروني تحتوي على تعليمات اعادة التعيين.</string>
+    <!--survey screen-->
+    <string name="survey_title">نخدمكم اليوم؟\nبماذا نستطيع ان</string>
+    <string name="survey_sub_title">اختاروا الى حد ثلاث خيارات</string>
+    <string name="what_trouble_you">ما الذي يزعجكم؟</string>
+    <string name="select_prefence">حددوا تفضيلاتكم</string>
+    <string name="any_prefernce">ليس لدي أي تفضيل</string>
+    <string name="female_prefernce">افضل خبير انثى</string>
+    <string name="male_prefernce">افضل خبير ذكر</string>
+    <string name="survey_selection_alert">يرجى تحديد خيار واحد على الاقل</string>
+    <!--progress screen-->
+    <string name="please_wait">يرجى الانتظار</string>
+    <string name="please_wait_message">يرجى الانتظار الى حين تواصلكم مع افضل خبير متاح</string>
+    <!--Api progress dialog messages-->
+    <!--expert screen-->
+    <string name="timing">توقيت</string>
+    <string name="focus">التركيز</string>
+    <string name="lanaguage">اللغة</string>
+    <string name="reviews">مراجع</string>
+    <string name="review">مراجعة</string>
+    <string name="add_review">اضف مراجعة</string>
+    <string name="thank_you">شكرا</string>
+    <string name="review_success">ان مراجعاتكم تساعد "نيبو" في الحفاظ على مستواها العالي</string>
+    <string name="expert_list_title">هل ترغبون المحادثة مع خبيرا تعاملتم معه مسبقا؟</string>
+    <string name="new_expert_messgae">ارغب التحدث مع خبير جدي</string>
+    <string name="choose_previous_expert">اختاروا خبيرا سابقا</string>
+    <string name="no_pdf_alert">غير متاح Pdf</string>
+    <!--timings-->
+    <string name="monday">الاثنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الاثنين</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">الخميس</string>
+    <string name="saturday">السبت</string>
+    <string name="sunday">الاحد</string>
+    <!--Home screen-->
+    <string name="talk_different_issue">ضوع مختلف\nالتكلم عن مو</string>
+    <string name="home_subtitle">ماذا تريدون ان تفعلوا اليوم؟</string>
+    <string name="hello">مرحبا</string>
+    <!--chat screen-->
+    <string name="message">من فضلك ادخل الرسالة</string>
+    <string name="view_expert">شاهد الخبير</string>
+    <string name="switch_expert">استبدال الخبير</string>
+    <string name="message_copy_title">هل ترغبون بإرسال محادثاتكم السابقة الى الخبير الجديد؟</string>
+    <string name="share_chat">نعم، الرجاء مشاركة سجل محادثاتي</string>
+    <string name="not_share_chat">لا، افضل الحفاظ على خصوصياتي</string>
+    <string name="image">صورة</string>
+    <!--Payment screen-->
+    <string name="payment">معلومات الدفع</string>
+    <string name="payment_message"> لكي يتم التفاعل مع خبير "نيبو " يجب اضافة بطاقة الائتمان الى حسابكم.
+ستتم محاسبتكم وفقا للوقت الذي يستغرقه الخبير في التحليل والرد عليكم فقط لا غير.
+الامن لدينا مهم جدا" لذلك جميع معاملاتكم محمية باستخدام بوابة الدفع الآمنة لدينا.
+    </string>
+    <string name="redirect_payment">الى بوابة الدفع\nاعادة التوجيه</string>
+    <string name="add_credit_card">اضفوا بطاقة الائتمان</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="cardholder_name">اسم حامل البطاقة</string>
+    <string name="cvv">CVV</string>
+    <string name="expired">الشهر/العام</string>
+    <string name="choose_default_card">اختاروا البطاقة الافتراضية</string>
+    <string name="add_card">اضفوا البطاقة</string>
+    <string name="select_card">اختاروا البطاقة</string>
+    <string name="visa">فيزا</string>
+    <string name="delete">حذف</string>
+    <string name="expired_text">منتهية الصلاحية</string>
+    <string name="set_default_card">تعيين كبطاقة افتراضية</string>
+    <string name="cardnumber_empty_alert">يرجى ادخال رقم البطاقة</string>
+    <string name="cardholder_empty_alert">يرجى ادخال اسم حامل البطاقة</string>
+    <string name="expiry_empty_alert">يرجى ادخال تاريخ انتهاء صلاحية البطاقة</string>
+    <string name="cvv_empty_alert">CVVيرجى ادخال رقم الـ</string>
+    <string name="delete_alert">هل انتم متأكدين، هل ترغبون في حذف هذه البطاقة؟</string>
+    <string name="doller">$</string>
+    <string name="aed">AED</string>
+    <string name="tl">TL</string>
+    <string name="minutes">الدقائق</string>
+    <string name="date">:التاريخ</string>
+    <string name="time">:التوقيت</string>
+    <string name="room">:غرفة</string>
+    <string name="txn_id">:هوية المعاملة</string>
+    <string name="expert">:اسم الخبير</string>
+    <string name="earned">:المبلغ</string>
+    <string name="paid">مدفوع</string>
+    <!--    <string name="unpaid">غير مدفوع</string>-->
+    <!--Setting screen-->
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="change_pwd">تغيير كلمة المرور</string>
+    <string name="language_menu">اختاروا اللغة</string>
+    <string name="manage_cards">إدارة البطاقات</string>
+    <string name="transaction_hitstory">سجل المعاملات</string>
+    <string name="pricing_terms">التسعير والشروط</string>
+    <string name="settings">الاعدادات</string>
+    <string name="feedback">ملاحظات / تعليقات</string>
+    <string name="subject">الموضوع</string>
+    <string name="logout">التسجيل للخروج</string>
+    <string name="logout_message">هل انتم متأكدين، ترغبون الخروج؟</string>
+    <string name="feedback_star_alert">يرجى اختيار التصنيف</string>
+    <string name="feedback_empty_alert">يرجى ادخال ملاحظاتكم/ تعليقاتكم </string>
+    <string name="subject_empty_alert">رجى ادخال ملاحظاتكم/ تعليقاتكم</string>
+    <string name="feedback_success_alert">تم ارسال الملاحظات/ التعليقات بنجاح</string>
+    <!--Change password screen-->
+    <string name="reset_password">إعادة تعيين كلمة المرو</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="repeat_new">كرروا كلمة المرور الجديدة</string>
+    <string name="currentpwd_empty_alert">يرجى ادخال كلمة المرور الحالية</string>
+    <string name="newpwd_empty_alert">يرجى ادخال كلمة المرور الجديدة</string>
+    <string name="repeatpwd_empty_alert">يرجى ادخال كلمة المرور المتكررة</string>
+    <string name="pwd_length_alert">يجب ان تكون كلمة المرور 6 احرف على الاقل</string>
+    <string name="pwd_mismatch_alert">كلمة المرور المتكررة غير متطابقة</string>
+    <string name="pwd_change_success_alert">م تغيير كلمة المرور بنجاح</string>
+    <string name="pwd_change_failed_alert">تم إدخال كلمة المرور الحالية بشكل خاطئ</string>
+    <string name="profile_change_success_alert">تم تعديل الملف الشخصي بنجاح</string>
+    <!--Expert offline screen-->
+    <string name="expert_offline">الخبير غير متواصل على الانترنت</string>
+    <string name="leave_message">اتركوا رسالة</string>
+    <!--general alert-->
+    <string name="card_error_alert">البطاقة غير صالحة</string>
+    <string name="card_expired_alert">انتهت صلاحية بطاقتكم</string>
+    <string name="timeout">فشل التفويض</string>
+    <string name="server_faliure">الخادم لا يستجيب</string>
+    <string name="wrong_with_backend">هناك خطأ ما، يرجى المحاولة مرة اخرى</string>
+    <string name="internet_error">فقد اتصال الانترنت</string>
+    <string name="error">خطأ</string>
+    <string name="alert">إنذار</string>
+    <string name="error_message">اسم المستخدم او كلمة المرور غير صحيحة</string>
+    <string name="already_registered_message">هوية البريد الإلكتروني مسجل سابقا مع حساب آخر</string>
+    <string name="forgot_password_error_alert">لم يتم انشاء هذا الحساب بعد</string>
+    <string name="press_back_message">اضغطوا مرة اخرى للخروج</string>
+    <string name="refresh_token_error_alert">هناك خطأ ما، يرجى اعادة الدخول</string>
+    <!--notification alert-->
+    <string name="notifications">إشعارات</string>
+    <string name="group">مجموعة</string>
+    <string name="end">النهاية</string>
+    <string name="inactive_conversation">محادثة غير فعالة</string>
+    <!--    <string name="inactive_conversation_message">It\'s been over %1$s minutes since your last response to %2$s would you still like to continue this conversation ?</string>-->
+    <string name="inactive_conversation_message">مر اكثر من %2$s دقائق من جوابكم الاخير الى %1$s هل ترغبون الاستمرار في هذه المحادثة؟</string>
+    <string name="expert_offline_message1">غير متصل حاليًا وسيكون متاحًا</string>
+    <string name="expert_offline_message2">يمكنكم استبدال الخبير بآخر او اتركوا رسالة غير متصلة بالإنترنت</string>
+    <string name="to">الى</string>
+    <string name="between">ما بين</string>
+    <!--need to translate-->
+    <string name="credit_card_title_alert">خطأ في بطاقة الائتمان</string>
+    <string name="credit_card_message_alert">ليس لديك أي بطاقات ائتمان صالحة في حسابك. يرجى إضافة صالح
+        بطاقة لمواصلة الدردشة
+    </string>
+    <string name="no_expert_alert">جميع الخبراء غير متصلين حاليًا ، يرجى إعادة المحاولة لاحقًا.</string>
+    <string name="no_expert_alert_title">الخبراء غير متاحين</string>
+    <string name="session_ended_alert">انتهت جلستك.</string>
+    <string name="type_here">... أكتب هنا</string>
+    <string name="system_error">خطأ في النظام</string>
+    <string name="system_error_message">لم نتمكن من الاتصال بالخادم. يرجى التأكد من أن لديك اتصال مستقر بالإنترنت.</string>
+    <string name="try_again">حاول مرة أخري</string>
+    <string name="account_activate_error_message">لم نتمكن من الاتصال بالخادم. يرجى التأكد من أن لديك اتصال مستقر بالإنترنت.</string>
+    <string name="end_conversation">نهاية المحادثة</string>
+    <string name="viewAll">عرض الكل</string>
+    <string name="agree">يوافق على</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="turkey">تركيا</string>
+
+</resources>

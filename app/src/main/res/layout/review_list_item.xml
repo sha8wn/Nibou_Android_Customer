@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/transparent_background"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/ubuntu_m"
+            android:text="dcdcddddddddddddd"
+            android:textColor="@color/screen_title_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/ubuntu_m"
+            android:text="dcdcddddddddddddd"
+            android:textColor="@color/screen_title_color"
+            android:textSize="14sp" />
+
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:focusable="false"
+            android:soundEffectsEnabled="false"
+            app:srb_clearRatingEnabled="false"
+            app:srb_clickable="false"
+            app:srb_drawableEmpty="@drawable/rating_unselected"
+            app:srb_drawableFilled="@drawable/rating_selected"
+            app:srb_isIndicator="true"
+            app:srb_numStars="5"
+            app:srb_scrollable="false"
+            app:srb_starHeight="24dp"
+            app:srb_starWidth="24dp"></com.willy.ratingbar.ScaleRatingBar>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/ubuntu_r"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            android:textColor="@color/screen_title_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

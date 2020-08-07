@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/item"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="80dp">
+
+    <View
+            android:id="@+id/bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@drawable/shadow_bg_drawable"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_placeholder"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/count"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/online_trans_circle_drable"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+            app:layout_constraintRight_toRightOf="@+id/profile_image"/>
+
+    <TextView
+            android:id="@+id/expert_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_b"
+            android:gravity="center|left"
+            android:textColor="@color/app_white_color_code"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/profile_image"
+            android:text="Dr. jane Doe"/>
+
+</android.support.constraint.ConstraintLayout>

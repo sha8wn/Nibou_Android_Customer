@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nibou.niboucustomer">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".application.NibouApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/fcm_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activitys.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.ShowDialogActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.SliderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.UserCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activitys.PricingAndTermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activitys.SignupSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.SurveyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.SurveyPreferenceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.ExpertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.RatingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.HomeActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.PDFViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WebViewAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.PaymentInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.PaymentCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.ExpertListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.ChatMessageCopyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.ReviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.ReviewSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activitys.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.PaymentCardListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.EarningActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activitys.EarningDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PDFVIEWAppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.BaseActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

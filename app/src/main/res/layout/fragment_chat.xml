@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/editBox"
+                android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+
+        <RelativeLayout
+                android:id="@+id/editBox"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/top_line_drawable"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                    android:id="@+id/iv_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/chat_camera"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_typingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_send"
+                    android:layout_toRightOf="@+id/iv_attachment">
+
+                <EditText
+                        android:id="@+id/et_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/message"
+                        android:fontFamily="@font/ubuntu_r"
+                        android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+                        android:maxLines="4"
+                        android:padding="5dp"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:imeOptions="actionDone"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/app_black_color_code"
+                        android:textColorHint="@color/chat_messgae_color"
+                        android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                    android:id="@+id/iv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/send_icon"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</layout>

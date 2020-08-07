@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/ubuntu_b"
+                    android:text="@string/settings"
+                    android:textColor="@color/app_black_color_code"
+                    android:textSize="24sp"/>
+
+            <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/menu_logout"/>
+
+
+        </RelativeLayout>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:id="@+id/profile_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/menu_profile"/>
+
+                    <TextView
+                            android:id="@+id/update_profile"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/profile_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:text="@string/edit_profile"
+                            android:textColor="@color/app_black_color_code"
+                            android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <ImageView
+                            android:id="@+id/bio_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/menu_password"/>
+
+                    <TextView
+                            android:id="@+id/change_pwd"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/bio_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:text="@string/change_pwd"
+                            android:textColor="@color/app_black_color_code"
+                            android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/lang_option"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp">
+
+                    <ImageView
+                            android:id="@+id/langauge_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/menu_language"/>
+
+                    <TextView
+                            android:id="@+id/choose_langauge"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/langauge_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            android:text="@string/language_menu"
+                            android:textColor="@color/app_black_color_code"
+                            android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <ImageView
+                            android:id="@+id/timing_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:padding="10dp"
+                            android:src="@drawable/menu_managecard"/>
+
+                    <TextView
+                            android:id="@+id/manage_cards"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/timing_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:text="@string/manage_cards"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/app_black_color_code"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <ImageView
+                            android:id="@+id/special_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/menu_bio"/>
+
+                    <TextView
+                            android:id="@+id/transaction_history"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/special_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:text="@string/transaction_hitstory"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/app_black_color_code"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <ImageView
+                            android:id="@+id/language_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/menu_bookmark"/>
+
+                    <TextView
+                            android:id="@+id/pricing_terms"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/language_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:text="@string/pricing_terms"
+                            android:textColor="@color/app_black_color_code"
+                            android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                    <ImageView
+                            android:id="@+id/feedbck_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/menu_feedback"/>
+
+                    <TextView
+                            android:id="@+id/feedback"
+                            android:layout_width="match_parent"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/feedbck_img"
+                            android:fontFamily="@font/ubuntu_m"
+                            android:padding="10dp"
+                            android:layout_centerInParent="true"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:textAllCaps="false"
+                            android:text="@string/feedback"
+                            android:textColor="@color/app_black_color_code"
+                            android:textSize="16sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

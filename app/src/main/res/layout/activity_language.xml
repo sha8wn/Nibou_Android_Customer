@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.constraint.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg">
+
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/choose_language"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="@string/choose_language"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/english"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="@string/english"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                app:layout_constraintTop_toBottomOf="@+id/choose_language"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/arabic"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="@string/arabic"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                app:layout_constraintTop_toBottomOf="@+id/english"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/turkish"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:text="@string/turkish"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                app:layout_constraintTop_toBottomOf="@+id/arabic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

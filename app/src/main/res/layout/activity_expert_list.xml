@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/title"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:text="@string/expert_list_title"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_m"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textAllCaps="true"
+                android:layout_below="@+id/toolbar"/>
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_below="@+id/title"
+                        android:layout_above="@+id/new_expert"
+                        android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/sub_title"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:text="@string/choose_previous_expert"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/opensans_r"
+                    android:textColor="@color/app_white_color_code"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sub_title"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+        <TextView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/new_expert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="12dp"
+                android:fontFamily="@font/ubuntu_b"
+                android:gravity="center"
+                android:background="@drawable/white_corner_drawable"
+                android:textColor="@color/app_white_color_code"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:text="@string/new_expert_messgae"
+                android:textAllCaps="true"/>
+
+
+    </RelativeLayout>
+</layout>

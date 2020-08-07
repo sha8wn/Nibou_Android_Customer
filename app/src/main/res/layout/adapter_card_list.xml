@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow_bg_drawable"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+    <TextView
+            android:id="@+id/card_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_m"
+            android:gravity="center"
+            android:textColor="@color/app_black_color_code"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/visa"/>
+
+    <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_b"
+            android:gravity="center"
+            android:textColor="@color/app_black_color_code"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/delete"/>
+
+    <TextView
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_b"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_centerInParent="true"
+            android:textColor="@color/app_black_color_code"
+            android:textSize="18sp"
+            android:layout_below="@+id/card_type"
+            android:text="****          ****          ****          1234"/>
+
+    <TextView
+            android:id="@+id/expire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_m"
+            android:gravity="center"
+            android:textColor="@color/app_black_color_code"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/card_number"
+            android:layout_alignParentLeft="true"
+            android:text="01/18"/>
+
+    <ImageView
+            android:id="@+id/expire_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_icon"
+            android:tint="@android:color/holo_red_dark"
+            android:layout_marginLeft="15sp"
+            android:visibility="invisible"
+            android:layout_below="@+id/card_number"
+            android:layout_toRightOf="@+id/expire"/>
+
+</RelativeLayout>

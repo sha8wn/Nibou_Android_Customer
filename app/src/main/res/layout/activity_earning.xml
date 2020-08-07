@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pdf_bg">
+
+        <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar"/>
+
+        <TextView
+                android:id="@+id/earnings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                android:text="@string/transaction_hitstory"
+                android:fontFamily="@font/ubuntu_b"
+                android:textColor="@color/screen_title_color"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_below="@+id/toolbar"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/earning_list"
+                android:layout_below="@+id/earnings"
+                android:layout_margin="20dp"
+                android:background="@drawable/shadow_bg_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</layout>
+
